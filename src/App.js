@@ -11,7 +11,7 @@ class App extends Component{
   getRecipe=async(e)=>{
     e.preventDefault();
     const search=e.target.searched.value;
-const Api_Key='87b7229cd8e9d9c07ccec5def00ae9bd';
+const Api_Key='Ur API Key';
 const Api_Call=await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${Api_Key}&q=${search}&count=9`);
 const data=await Api_Call.json();
 console.log(data);
